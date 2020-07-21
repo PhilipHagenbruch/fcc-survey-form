@@ -7,46 +7,46 @@
         <title>FCC "Build a Survey Form" challenge</title>
     </head>
     <body>
-        <h1 id="title">Title</h1>
-        <p id="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestiae, tenetur excepturi commodi adipisci enim laudantium veritatis, eligendi minima vel non rerum saepe accusamus quo modi assumenda, magni dolor! Architecto!</p>
+        <h1 id="title">We'd like to know you</h1>
+        <p id="description">This is an opportunity to share intimate details about your person.</p>
         <form id="survey-form">
             <label for="name" id="name-label">Name:</label>
             <input type="text" id="name" placeholder="Ikan Pullitov" required>
             <label for="email" id="email-label">Email:</label>
             <input type="email" id="email" placeholder="mail@example.com" required>
-            <label for="number" id=number-label>Number:</label>
+            <label for="number" id=number-label>Age:</label>
             <input type="number" id="number" min="0" max="99" placeholder="0-99">
-            <label for="dropdown">Choose one:</label>
+            <label for="dropdown">Preferred kind of gelato:</label>
             <select id="dropdown">
-                <option value="dropdown-option1">Option 1</option>
-                <option value="dropdown-option2">Option 2</option>
-                <option value="dropdown-option3">Option 3</option>
+                <option value="dropdown-option1">Creamy</option>
+                <option value="dropdown-option2">Chunky</option>
+                <option value="dropdown-option3">Fluid</option>
             </select>
             <fieldset>
-                <legend>Choose one:</legend>
+                <legend>How much do you actually like gelato?</legend>
                 <label for="radio-1">
-                    <input id="radio-1" value="radio-1" name="radio" type="radio">Option 1
+                    <input id="radio-1" value="radio-1" name="radio" type="radio">🤮
                 </label>
                 <label for="radio-2">
-                    <input id="radio-2" value="radio-2" name="radio" type="radio" checked>Option 2
+                    <input id="radio-2" value="radio-2" name="radio" type="radio" checked>🤷
                 </label>
                 <label for="radio-3">
-                    <input id="radio-3" value="radio-3" name="radio" type="radio">Option 3
+                    <input id="radio-3" value="radio-3" name="radio" type="radio">🤤
                 </label>
             </fieldset>
             <fieldset>
-                <legend>Choose any:</legend>
+                <legend>What can you build out of gelato?</legend>
                 <label for="checkbox-1">
-                    <input id="checkbox-1" value="checkbox-1" name="checkbox" type="checkbox">Option 1
+                    <input id="checkbox-1" value="checkbox-1" name="checkbox" type="checkbox">A palace
                 </label>
                 <label for="checkbox-2">
-                    <input id="checkbox-2" value="checkbox-2" name="checkbox" type="checkbox">Option 2
+                    <input id="checkbox-2" value="checkbox-2" name="checkbox" type="checkbox">A DMV office
                 </label>
                 <label for="checkbox-3">
-                    <input id="checkbox-3" value="checkbox-3" name="checkbox" type="checkbox" checked >Option 3
+                    <input id="checkbox-3" value="checkbox-3" name="checkbox" type="checkbox" checked >Different gelato
                 </label>
             </fieldset>
-            <label for="comments">Comments:</label>
+            <label for="comments">Room for more personal information:</label>
             <textarea id="comments"></textarea>
             <input type="submit" id="submit" value="Submit">
         </form>
