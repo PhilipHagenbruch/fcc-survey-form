@@ -10,18 +10,21 @@
         <h1 id="title">We'd like to know you</h1>
         <p id="description">This is an opportunity to share intimate details about your person.</p>
         <form id="survey-form">
-            <label for="name" id="name-label">Name:</label>
-            <input type="text" id="name" placeholder="Ikan Pullitov" required>
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" placeholder="mail@example.com" required>
-            <label for="number" id=number-label>Age:</label>
-            <input type="number" id="number" min="0" max="99" placeholder="0-99">
-            <label for="dropdown">Preferred kind of gelato:</label>
-            <select id="dropdown">
-                <option value="dropdown-option1">Creamy</option>
-                <option value="dropdown-option2">Chunky</option>
-                <option value="dropdown-option3">Fluid</option>
-            </select>
+            <fieldset>
+                <legend>So... tell us about yourself:</legend>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Ikan Pullitov" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="mail@example.com" required>
+                <label for="number" id=number-label>Age:</label>
+                <input type="number" id="number" min="0" max="99" placeholder="0-99">
+                <label for="dropdown">Preferred kind of gelato:</label>
+                <select id="dropdown">
+                    <option value="dropdown-option1">Creamy</option>
+                    <option value="dropdown-option2">Chunky</option>
+                    <option value="dropdown-option3">Fluid</option>
+                </select>
+            </fieldset>
             <fieldset>
                 <legend>How much do you actually like gelato?</legend>
                 <label for="radio-1">
@@ -46,8 +49,12 @@
                     <input id="checkbox-3" value="checkbox-3" name="checkbox" type="checkbox" checked >Different gelato
                 </label>
             </fieldset>
-            <label for="comments">Room for more personal information:</label>
-            <textarea id="comments"></textarea>
+            <fieldset>
+                <legend>
+                    <label for="comments">Room for more personal information:</label>
+                </legend>
+                <textarea id="comments"></textarea>
+            </fieldset>
             <input type="submit" id="submit" value="Submit">
         </form>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
